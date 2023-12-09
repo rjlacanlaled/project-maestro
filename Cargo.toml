@@ -1,0 +1,14 @@
+[workspace.lints.rust]
+unsafe_code = "forbid"
+
+[workspace]
+resolver = "2"
+members = [
+    # -- Application Libraries
+    "crates/libs/lib-auth",
+    "crates/libs/lib-core",
+    "crates/libs/lib-utils",
+
+    # -- Application Services
+    "crates/services/api-service",
+]
